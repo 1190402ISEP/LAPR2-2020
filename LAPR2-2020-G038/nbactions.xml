@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ António Daniel Barbosa Fernandes, [17.05.21 19:26]
+  ~ Copyright (c) 2021.
+  ~
+  ~ Programador: António Daniel Barbosa Fernandes
+  ~
+  ~ UserName: anton
+  ~ ----------------
+  ~ INFORMAÇÕES:
+  ~ Nome do Projeto: GITHUB 1190402
+  ~ Módulo: GITHUB 1190402
+  ~ Caminho: E:/GITHUB 1190402/Licenciatura/1ºANO/2ºSEMESTRE/LAPR2/LAPR2-2020-G038/nbactions.xml
+  ~ Ficheiro:  nbactions.xml
+  ~ Última Edição: 03/06/21, 10:36
+  ~ Nome da Classe: nbactions.xml
+  -->
+
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>package</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+        </goals>
+        <properties>
+            <runfx.args>-jar "${project.build.directory}/${project.build.finalName}.jar"</runfx.args>
+        </properties>
+    </action>
+    <action>
+        <actionName>debug</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>package</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+        </goals>
+        <properties>
+            <runfx.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -Dglass.disableGrab=true
+                -jar "${project.build.directory}/${project.build.finalName}.jar"
+            </runfx.args>
+            <jpda.listen>true</jpda.listen>
+        </properties>
+    </action>
+</actions>

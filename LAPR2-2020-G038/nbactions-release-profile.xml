@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ António Daniel Barbosa Fernandes, [17.05.21 19:26]
+  ~ Copyright (c) 2021.
+  ~
+  ~ Programador: António Daniel Barbosa Fernandes
+  ~
+  ~ UserName: anton
+  ~ ----------------
+  ~ INFORMAÇÕES:
+  ~ Nome do Projeto: GITHUB 1190402
+  ~ Módulo: GITHUB 1190402
+  ~ Caminho: E:/GITHUB 1190402/Licenciatura/1ºANO/2ºSEMESTRE/LAPR2/LAPR2-2020-G038/nbactions-release-profile.xml
+  ~ Ficheiro:  nbactions-release-profile.xml
+  ~ Última Edição: 18/05/21, 19:15
+  ~ Nome da Classe: nbactions-release-profile.xml
+  -->
+
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-classpath %classpath ui.MainApp</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath ui.MainApp</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-classpath %classpath ui.MainApp</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+    </actions>

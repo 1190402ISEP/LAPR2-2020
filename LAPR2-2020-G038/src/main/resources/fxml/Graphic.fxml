@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!--
+  ~ António Daniel Barbosa Fernandes, [17.05.21 19:26]
+  ~ Copyright (c) 2021.
+  ~
+  ~ Programador: António Daniel Barbosa Fernandes
+  ~
+  ~ UserName: anton
+  ~ ----------------
+  ~ INFORMAÇÕES:
+  ~ Nome do Projeto: GITHUB 1190402
+  ~ Módulo: GITHUB 1190402
+  ~ Caminho: E:/GITHUB 1190402/Licenciatura/1ºANO/2ºSEMESTRE/LAPR2/LAPR2-2020-G038/src/main/resources/fxml/Graphic.fxml
+  ~ Ficheiro:  Graphic.fxml
+  ~ Última Edição: 18/05/21, 19:15
+  ~ Nome da Classe: Graphic.fxml
+  -->
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.GraphicUI">
+   <children>
+      <BarChart fx:id="graphic" layoutX="14.0" prefHeight="434.0" prefWidth="619.0">
+        <xAxis>
+          <CategoryAxis fx:id="Y" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="X" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="Voltar" layoutX="54.0" layoutY="446.0" mnemonicParsing="false" onAction="#Voltari" prefHeight="28.0" prefWidth="59.0" text="Voltar" />
+      <Button fx:id="Math" layoutX="542.0" layoutY="446.0" mnemonicParsing="false" onAction="#Math" prefHeight="28.0" prefWidth="66.0" text="Math" />
+   </children>
+</AnchorPane>

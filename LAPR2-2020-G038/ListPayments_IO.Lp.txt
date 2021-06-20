@@ -1,0 +1,2 @@
+TaskID , TaskDescription, TaskAssignDuration(h), TaskCostPerHour(euros) ,ExecutionFinishDate, ExecutionDelay (hours), briefDesc, FreelancerID, FreelancerName, FreelancerExpertise ,FreelancerEMail,FreelancerNIF,FreelancerBanckAccout,FreelancerAddress,FreeLancerCountry 
+12345 ; Very good ; 10.0 ; Web ; weqd ; sdaf ; asdas ;  ; jw1 ; Oscar ; Junior ; O@.com ; 4215133 ; 214513 ; Rua do peru ; Quenia
